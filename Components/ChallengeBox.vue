@@ -3,7 +3,7 @@
  
     <!-- Player Image -->
     <div class="relative mb-6">
-      <img src="/player.png" alt="Player" class="max-w-full h-80 " />
+       <NuxtImg format="webp"  src="/player.png" alt="Player" class="max-w-full h-80 " />
     </div>
    
     <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-red-500 mb-6 text-center">
@@ -17,8 +17,8 @@
 
       <!-- App Store Buttons -->
       <div class="flex justify-center gap-4 mb-6">
-        <img src="/google-play.png" alt="Google Play" class="h-10" />
-        <img src="/app-store.png" alt="App Store" class="h-10" />
+         <NuxtImg format="webp"  src="/google-play.png" alt="Google Play" class="h-10" />
+         <NuxtImg format="webp"  src="/app-store.png" alt="App Store" class="h-10" />
       </div>
         <Schools />
       </div>
@@ -26,5 +26,5 @@
 </template>
 
 <script setup>
-import Schools from '~/Components/Schools.vue';
+import Schools from '~/components/Schools.vue';
 </script>

@@ -11,8 +11,8 @@
 </template>
 
 <script setup>
-import NavBar from '~/Components/NavBar.vue';
-import Challange from '~/Pages/Challange.vue';
+import NavBar from '~/components/NavBar.vue';
+import Challange from '~/pages/Challange.vue';
 
 </script>
 <style>

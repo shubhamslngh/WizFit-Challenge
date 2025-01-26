@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   pages: false,
-  modules: ['@nuxt/ui', '@nuxtjs/google-fonts'],
+  modules: ['@nuxt/ui', '@nuxtjs/google-fonts', '@nuxt/image'],
   googleFonts: {
     families: {
       Oswald: [400, 500, 600, 700], 

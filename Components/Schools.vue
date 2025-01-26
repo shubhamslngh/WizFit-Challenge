@@ -44,7 +44,7 @@
 
  <h2 class="text-sm font-bold uppercase text-gray-700 flex items-center gap-2">
       
-      <img
+     <NuxtImg format="webp" 
         :src="school.school_logo || fallbackLogo"
         alt="School Logo"
         class="h-10 w-10 object-contain rounded-md"

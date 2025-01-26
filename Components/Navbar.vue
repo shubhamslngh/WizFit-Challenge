@@ -4,11 +4,12 @@
     <div class="bg-black h-14 sm:h-10 flex items-start justify-between px-4">
       <!-- Logo -->
       <NuxtLink to="/" class="flex ">
-        <img src="/logo.png" alt="logo" class=" place-self-baseline xs:scale-50 h-auto w-[160px] object-contain" />
+        <NuxtImg format="webp" src="/logo.png" alt="logo" class=" place-self-baseline xs:scale-50 h-auto w-[160px] object-contain" />
+        
       </NuxtLink>
      
       <!-- Buttons -->
-      <div class="scale-90 md:scale-100 flex m-2 gap-4">
+      <div class="scale-100 sm:scale-90 lg:scale-100 md:scale-100 flex m-2 gap-4">
         <UButton class="bg-[#fdbb00] py-[8px] px-[16px] rounded-none" size="md">SCHEDULE & TICKETS</UButton>
         <UButton class="bg-[#ee1f51] py-[8px] px-[16px] rounded-none" size="md">CONTACT & BOOKING</UButton>
       </div>
