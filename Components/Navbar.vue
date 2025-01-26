@@ -10,7 +10,7 @@
     class="h-auto mt-20 w-[160px] sm:w-[120px] sm:mt-2 md:w-[140px] md:mt-8 lg:w-[160px] lg:mt-10 object-contain"
   />
       <!-- Buttons -->
-  <div class="m-2 flex flex-wrap size-full sm:hidden shrink">
+  <div class="hidden sm:flex flex-wrap justify-end space-x-2">
         <UButton class="bg-[#fdbb00] py-[8px] px-[16px] m-2 p-2 rounded-none" size="md">SCHEDULE & TICKETS</UButton>
         <UButton class="bg-[#ee1f51] py-[8px] px-[16px] m-2 p-2 rounded-none" size="md">CONTACT & BOOKING</UButton>
       </div>
