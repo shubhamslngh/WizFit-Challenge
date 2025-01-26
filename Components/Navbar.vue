@@ -1,24 +1,24 @@
 <template>
-  <header class="w-full mx-auto h-[160px] bg-[#241360] text-white shadow-xl shadow-white sticky top-0 z-50">
+  <header class="flex flex-col flex-wrap w-full mx-auto h-[160px] bg-[#241360] text-white shadow-xl shadow-white sticky top-0 z-50">
     <!-- Top Header -->
-    <div class="bg-black h-14 sm:h-10 flex items-start justify-between px-4">
+    <div class="bg-black h-14 flex flex-row flex-nowrap items-start justify-between px-4">
       <!-- Logo -->
-      <NuxtLink to="/" class="flex ">
-        <NuxtImg format="webp" src="/logo.png" alt="logo" class=" place-self-baseline xs:scale-50 h-auto w-[160px] object-contain" />
+      <NuxtLink to="/" class=" ">
+        <NuxtImg format="webp" src="/logo.png" alt="logo" class=" h-auto w-[160px] object-contain" />
         
       </NuxtLink>
      
       <!-- Buttons -->
-      <div class="scale-100 sm:scale-90 lg:scale-100 md:scale-100 flex m-2 gap-4">
-        <UButton class="bg-[#fdbb00] py-[8px] px-[16px] rounded-none" size="md">SCHEDULE & TICKETS</UButton>
-        <UButton class="bg-[#ee1f51] py-[8px] px-[16px] rounded-none" size="md">CONTACT & BOOKING</UButton>
+      <div class="m-2 ">
+        <UButton class="bg-[#fdbb00] py-[8px] px-[16px] m-2 rounded-none" size="md">SCHEDULE & TICKETS</UButton>
+        <UButton class="bg-[#ee1f51] py-[8px] px-[16px] m-2 rounded-none" size="md">CONTACT & BOOKING</UButton>
       </div>
 
       <!-- Hamburger Menu -->
   
     </div>
 
-    <!-- Navigation Bar -->
+
          <button
         class="block place-self-end md:hidden text-white focus:outline-none"
         @click="isMenuOpen = !isMenuOpen"
