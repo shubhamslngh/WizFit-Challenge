@@ -2,7 +2,31 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   pages: false,
-  modules: ['@nuxt/ui', '@nuxtjs/google-fonts', '@nuxt/image'],
+  modules: ['@nuxt/ui', '@nuxtjs/google-fonts', '@nuxt/image','@nuxtjs/tailwindcss'],
+  ui: {
+    global: false,
+    disableGlobalStyles: true,
+    prefix: 'U',
+    safelistColors: ['primary'],
+    button: {
+      default: {
+        size: 'md',
+        color: 'gray',
+        variant: 'ghost'
+      }
+    },
+    card: {
+      default: {
+        size: 'md',
+        color: 'none',
+        variant: 'ghost',
+        strategy:'merge'
+      }
+    }
+  },
+  colorMode: {
+    preference: 'light'
+  },
   googleFonts: {
     families: {
       Oswald: [400, 500, 600, 700], 

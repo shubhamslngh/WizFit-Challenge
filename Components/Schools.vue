@@ -18,6 +18,7 @@
           v-model="searchQuery"
           placeholder="Search schools..."
           clearable
+          color="primary"
           size="lg"
           @input="handleSearchInput"
           class="w-full border-2 rounded-sm p-2 max-w-lg"
@@ -36,7 +37,8 @@
   <UCard
     v-for="school in schools"
     :key="school.id"
-    class="flex flex-nowrap bg-slate-200 shadow-md hover:shadow-2xl border-2 border-b-[#241360]"
+    color="secondary"
+    class="flex flex-nowrap bg-slate-200 shadow-md hover:shadow-2xl border-1 border-b-[#241360]"
   >
   
     <!-- School Logo -->

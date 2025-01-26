@@ -2,7 +2,7 @@
   <div class="relative">
     <NavBar />
 
-    <main class="pt-1">
+    <main class="pt-[1fr]">
       <Challange />
       <div class="h-[100vh]"> 
       </div>
