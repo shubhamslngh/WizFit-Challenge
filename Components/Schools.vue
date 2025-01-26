@@ -36,13 +36,13 @@
   <UCard
     v-for="school in schools"
     :key="school.id"
-    class="flex flex-nowrap bg-slate-200 shadow-md hover:shadow-2xl border-2 border-b-green-500"
+    class="flex flex-nowrap bg-slate-200 shadow-md hover:shadow-2xl border-2 border-b-[#241360]"
   >
   
     <!-- School Logo -->
     
 
- <h2 class="text-sm font-bold text-gray-700 flex items-center gap-2">
+ <h2 class="text-sm font-bold uppercase text-gray-700 flex items-center gap-2">
       
       <img
         :src="school.school_logo || fallbackLogo"

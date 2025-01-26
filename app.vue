@@ -1,8 +1,12 @@
 <template>
- 
-  <div>
-    <NavBar class="sticky top-0 z-50"/>
-    <Challange />
+  <div class="relative">
+    <NavBar />
+
+    <main class="pt-1">
+      <Challange />
+      <div class="h-[100vh]"> 
+      </div>
+    </main>
   </div>
 </template>
 

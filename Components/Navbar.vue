@@ -1,36 +1,37 @@
 <template>
-  <header class="w-full h-fit bg-[#241360] text-white shadow-md sticky top-0 z-50">
+  <header class="w-full mx-auto h-[160px] bg-[#241360] text-white shadow-xl shadow-white sticky top-0 z-50">
     <!-- Top Header -->
     <div class="bg-black h-14 sm:h-10 flex items-start justify-between px-4">
       <!-- Logo -->
       <NuxtLink to="/" class="flex ">
-        <img src="/logo.png" alt="logo" class="scale-100 xs:scale-50 h-auto w-[160px]" />
+        <img src="/logo.png" alt="logo" class=" place-self-baseline xs:scale-50 h-auto w-[160px] object-contain" />
       </NuxtLink>
-
+     
       <!-- Buttons -->
-      <div class="hidden md:flex m-2 gap-4">
+      <div class="scale-90 md:scale-100 flex m-2 gap-4">
         <UButton class="bg-[#fdbb00] py-[8px] px-[16px] rounded-none" size="md">SCHEDULE & TICKETS</UButton>
         <UButton class="bg-[#ee1f51] py-[8px] px-[16px] rounded-none" size="md">CONTACT & BOOKING</UButton>
       </div>
 
       <!-- Hamburger Menu -->
-      <button
-        class="block md:hidden text-white focus:outline-none"
-        @click="isMenuOpen = !isMenuOpen"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
+  
     </div>
 
     <!-- Navigation Bar -->
+         <button
+        class="block place-self-end md:hidden text-white focus:outline-none"
+        @click="isMenuOpen = !isMenuOpen"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
     <div
-      class="container mx-auto py-4 md:flex md:items-center md:justify-end"
-      :class="{ 'hidden': !isMenuOpen, 'block': isMenuOpen }"
+      class="container mx-auto py-4 md:flex md:items-end md:justify-end"
+      :class="{ 'hidden': !isMenuOpen, 'block ': isMenuOpen }"
     >
       <nav>
-        <ul class="flex flex-col md:flex-row items-center md:gap-6 gap-4">
+        <ul class="flex flex-row sm:flex-col md:flex-row p-2 sm:bg-[#241360] bg-transparent items-end md:gap-6 gap-4">
           <li>
             <NuxtLink to="/" class="hover:text-gray-300">FUNDRAISING GAME</NuxtLink>
           </li>
@@ -59,12 +60,11 @@
 export default {
   data() {
     return {
-      isMenuOpen: false, // State to toggle mobile menu visibility
+      isMenuOpen: false, 
     };
   },
 };
 </script>
 
 <style>
-/* Add custom styles if needed */
 </style>
