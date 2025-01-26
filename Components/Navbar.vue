@@ -2,12 +2,13 @@
   <header class="w-full h-50 bg-[#241360] text-white shadow-md sticky top-0 z-50">
     <!-- Top Header -->
     <div class="flex flex-row flex-nowrap bg-black h-20 items-center justify-between ">
-      <!-- Logo -->
         <NuxtImg
-    format="webp"
+    format="svg"
+    fit="cover"
     src="/logo.png"
     alt="logo"
-    class="h-auto mt-20 w-[160px] sm:w-[120px] sm:mt-2 md:w-[140px] md:mt-8 lg:w-[160px] lg:mt-10 object-contain"
+    sizes="20vw sm:20vw md:150px"
+    class="p-5 mt-0 md:mt-15 lg:mt-20 "
   />
       <!-- Buttons -->
   <div class="hidden sm:flex flex-wrap justify-end space-x-2">
